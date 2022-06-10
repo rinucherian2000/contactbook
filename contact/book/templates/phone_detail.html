@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block body_block%}
+
+<div class="row mt-3">
+    <div class="col-6"></div>
+
+
+    <div class="card-body" align="center">
+        <h3 class="card-title">Contact Details</h3>
+        <h5 class="card-title">{{phone.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Address:{{phone.address}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Phone:{{phone.phone}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Date:{{phone.date}}</h6>
+        <a href="{%url 'listphone'  %} " class="btn btn-primary">Go Back</a>
+    </div>
+
+
+    <div class="col-3"></div>
+</div>
+
+
+{%endblock%}
